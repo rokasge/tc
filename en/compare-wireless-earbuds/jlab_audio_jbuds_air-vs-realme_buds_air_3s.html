@@ -23,7 +23,7 @@
       <link rel="stylesheet" href="/assets/style.css">
     <script defer src="https://app.tinyanalytics.io/pixel/KOwDE1PcbhMVPvKt"></script>
    </head>
-   <body>
+   <body onload="insertText();">
       <div class="nav-container">
          <nav class="nav">
             <div class="nav-left">
@@ -491,5 +491,18 @@
             </div>
          </footer>
       </div>
+<script type='text/javascript'>
+        function insertText () {
+            fetch('http://ip-api.com/json').then(response => {
+    return response.json();
+}).then(data => {
+    if (data.country == "Lithuania") { 
+        document.getElementsByTagName('tbody')[0].innerHTML = '<tr><td class="cell-h">Check Price</td><td class="cell-s1 cell-unknown"><a href="https://www.amazon.com/s?k=jlab_audio_jbuds_air&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><u>Check Price on Amazon</u></a></td><td class="cell-s2 cell-unknown"><a href="https://www.amazon.com/s?k=realme_buds_air_3se&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><u>Check Price on Amazon</u></a></td></tr>' + document.getElementsByTagName('tbody')[0].innerHTML;
+    } 
+});
+}
+    </script>
+
+
    </body>
 </html>
