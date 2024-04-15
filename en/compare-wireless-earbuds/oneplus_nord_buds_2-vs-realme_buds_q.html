@@ -511,17 +511,17 @@
                <a class="footer-about-link" href="https://techcompared.com/en/about.html">About</a><a class="footer-about-link" href="https://techcompared.com/en/privacy.html">Privacy Policy</a>
             </div>
             <div class="footer-copyright">
-               <span>TechCompared.com © 2022</span>
+               <span>TechCompared.com © 2024</span>
             </div>
          </footer>
       </div></body>
 <script type='text/javascript'>
         function insertText () {
-            fetch('http://ip-api.com/json').then(response => {
+            fetch('https://api.ipgeolocation.io/ipgeo?apiKey=c9da41718e524c1588a40b26b45950ac').then(response => {
     return response.json();
 }).then(data => {
-    if (data.country == "Lithuania") { 
-        document.getElementsByTagName('table')[0].innerHTML = '<tr><td class="cell-h">Check Price</td><td class="cell-s1 cell-unknown"><a href="https://www.amazon.com/s?k=oneplus_nord_buds_2&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><u>Check Price on Amazon</u></a></td><td class="cell-s2 cell-unknown"><a href="https://www.amazon.com/s?k=realme_buds_qe&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><u>Check Price on Amazon</u></a></td></tr>' + document.getElementsByTagName('tbody')[0].innerHTML;
+    if (data.country_name == "Lithuania") { 
+        document.getElementsByTagName('table')[0].innerHTML = '<tr><td class="cell-h">Check Price</td><td class="cell-s1 cell-unknown"><a href="https://www.amazon.com/s?k=oneplus_nord_buds_2&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><img height="80" src="https://techcompared.com/assets/checkamazon.png"></a></td><td class="cell-s2 cell-unknown"><a href="https://www.amazon.com/s?k=realme_buds_qe&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><img height="80" src="https://techcompared.com/assets/checkamazon.png"></a></td></tr>' + document.getElementsByTagName('tbody')[0].innerHTML;
     } 
 });
 }
