@@ -510,14 +510,8 @@
          </footer>
       </div></body>
 <script type='text/javascript'>
-        function insertText () {
-            fetch('https://api.ipgeolocation.io/ipgeo?apiKey=c9da41718e524c1588a40b26b45950ac').then(response => {
-    return response.json();
-}).then(data => {
-    if (data.country_name == "United States") { 
-        document.getElementsByTagName('table')[0].innerHTML = '<tr><td class="cell-h">Check Price</td><td class="cell-s1 cell-unknown"><a href="https://www.amazon.com/s?k=bose_quietcomfort_earbuds&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><img height="80" src="https://techcompared.com/assets/checkamazon.png"></a></td><td class="cell-s2 cell-unknown"><a href="https://www.amazon.com/s?k=denon_perl_proe&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><img height="80" src="https://techcompared.com/assets/checkamazon.png"></a></td></tr>' + document.getElementsByTagName('tbody')[0].innerHTML;
-    } 
-});
+         function insertText () {
+            document.getElementsByTagName('table')[0].innerHTML = '<tr><td class="cell-h">Check Price</td><td class="cell-s1 cell-unknown"><a href="https://www.amazon.com/s?k=bose_quietcomfort_earbuds&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><img height="80" src="https://techcompared.com/assets/checkamazon.png"></a></td><td class="cell-s2 cell-unknown"><a href="https://www.amazon.com/s?k=denon_perl_proe&crid=SA9KQC0MSHS7&ref=as_li_ss_tl&tag=techcompar016-20"><img height="80" src="https://techcompared.com/assets/checkamazon.png"></a></td></tr>' + document.getElementsByTagName('tbody')[0].innerHTML;
 }
     </script>
 
